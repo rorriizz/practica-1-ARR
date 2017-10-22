@@ -99,10 +99,14 @@ exports.getAutores=function(req, res, next){
 	console.log('GET/autores');
 	console.log('BODY '+req.body);
 	//res.status(200).jsonp(libros[1].autor);
+	var c=0;
 	var autorLibros=[];
 	for (var i = 0; i < libros.length; i++) { 
  		console.log('Autores: '+ libros[i].autor);
- 		autorLibros.push(libros[i].autor);
+ 		
+ 		//autorLibros.push(libros[i].autor);
+ 		autorLibros[c]=libros[i].autor;
+ 		c++;
 	}
 	res.status(200).jsonp(autorLibros);
 };
