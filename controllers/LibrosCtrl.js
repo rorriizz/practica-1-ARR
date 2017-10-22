@@ -91,7 +91,7 @@ exports.deleteLibro=function(req, res, next){
 	var encontrar=false;
 	for (var i = 0; i < libros.length; i++) { 
  		if(libros[i].id==req.params.id){ 			
- 			res.status(200).jsonp('Se eliminó el libro: '+req.params.id);
+ 			res.status(200).jsonp(libros[i]);//res.status(200).jsonp('Se eliminó el libro: '+req.params.id);
  			libros.splice(i,1);		//libros[i]='null'; //delete libros[i];
  			encontrar=true;
 		}
