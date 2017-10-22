@@ -1,4 +1,4 @@
-# practica-1-ARR
+# practica-1-ARR.git
 Práctica 1: Creación de API REST utilizando NodeJS y Express
 
 git clone
