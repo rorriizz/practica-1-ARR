@@ -1,5 +1,7 @@
 # practica-1-ARR.git
-Práctica 1: Creación de API REST utilizando NodeJS y Express
+Práctica 1: Creación de API REST utilizando NodeJS y Express <br>
+
+Para ejecutar la aplicación se deben seguir los siguientes pasos: <br>
 
 git clone <br>
 npm install               // instalar dependencias<br>
