@@ -85,7 +85,7 @@ exports.deleteLibro=function(req, res, next){
 	for (var i = 0; i < libros.length; i++) { 
  		if(libros[i].id==req.params.id){ 			
  			res.status(200).jsonp('Se eliminó el libro: '+req.params.id);
- 			libros[i]='null'; //delete libros[i];
+ 			libros.splice(i,1);		//libros[i]='null'; //delete libros[i];
  			encontrar=true;
 		}
 	}
@@ -178,7 +178,7 @@ exports.deleteAutor=function(req, res, next){
 
  		if(nombreAutor==autor){ 			
  			res.status(200).jsonp('Se eliminó el libro: '+req.params.nombre);
- 			libros[i]='null'; //delete libros[i];
+ 			libros.splice(i,1);			//libros[i]='null'; //delete libros[i];
  			encontrar=true;
 		}
 	}
